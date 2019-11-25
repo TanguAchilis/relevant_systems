@@ -25,8 +25,9 @@ class _NormalInputFieldState extends State<NormalInputField> {
       ),
       child: Container(
          padding: EdgeInsets.only(left: screensize.width/50),
+        height: screensize.height/10,
         decoration: BoxDecoration(
-          border: Border(left: BorderSide(color: focus?Theme.of(context).primaryColor:Colors.transparent,width:10 ))
+          border: Border(left: BorderSide(color: focus?Theme.of(context).primaryColorDark:Colors.transparent,width:10 ))
         ),
         child: TextFormField(
           onTap: (){
