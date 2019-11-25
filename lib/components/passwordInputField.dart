@@ -28,8 +28,9 @@ class _PasswordInputFieldState extends State<PasswordInputField> {
                   ),
       child: Container(
         padding: EdgeInsets.only(left: screensize.width/40),
+        height: screensize.height/10,
         decoration: BoxDecoration(
-          border: Border(left: BorderSide(color: focus?Theme.of(context).primaryColor:Colors.transparent,width:10 ))
+          border: Border(left: BorderSide(color: focus?Theme.of(context).primaryColorDark:Colors.transparent,width:10 ))
         ),
 
         child: TextFormField(

@@ -1,4 +1,4 @@
-package relevantsystems.relevantsystems.com.relevant_systems;
+package com.relevantSystems.relevant_systems;
 
 import android.os.Bundle;
 import io.flutter.app.FlutterActivity;
