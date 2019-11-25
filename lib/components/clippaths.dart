@@ -8,7 +8,8 @@ class TriangularPath extends StatelessWidget {
     return ClipPath(
       child: Container(
         height: MediaQuery.of(context).size.height,
-        decoration: BoxDecoration(color: Color.fromRGBO(236, 154, 156, 1)),
+      //  decoration: BoxDecoration(color: Color.fromRGBO(236, 154, 156, 1)),
+        decoration: BoxDecoration(color: Theme.of(context).primaryColor),
       ),
       clipper: TriangularPathWaveClipper(),
     );
@@ -21,7 +22,8 @@ class SemiTriangularPath extends StatelessWidget {
     return ClipPath(
       child: Container(
         height: MediaQuery.of(context).size.height,
-        decoration: BoxDecoration(color: Color.fromRGBO(253, 234, 26, 1)),
+
+        decoration: BoxDecoration(color: Theme.of(context).primaryColor),
       ),
       clipper: SemiTriangularPathWaveClipper(),
     );
@@ -34,7 +36,7 @@ class TopThinTriangularPath extends StatelessWidget {
     return ClipPath(
       child: Container(
         height: MediaQuery.of(context).size.height,
-        decoration: BoxDecoration(color: Colors.red),
+        decoration: BoxDecoration(color: Color(0xFF336BFA)),
       ),
       clipper: TopThinTriangularWaveClipper(),
     );
@@ -47,7 +49,7 @@ class BottomThinTriangularPath extends StatelessWidget {
     return ClipPath(
       child: Container(
         height: MediaQuery.of(context).size.height,
-        decoration: BoxDecoration(color: Colors.green),
+        decoration: BoxDecoration(color: Color(0xFF336BFA)),
       ),
       clipper: BottomThinTriangularPathWaveClipper(),
     );
