@@ -27,7 +27,7 @@ class LoginScreen extends StatelessWidget {
           SizedBox(height: screensize.height / 30,),
 
           Text('Relevant Systems',  style: TextStyle(fontSize: 30, color: Colors.grey.shade800, fontFamily: 'Gotham-Medium', fontWeight: FontWeight.w900),),
-          SizedBox(height: screensize.height/14,),
+          SizedBox(height: screensize.height/18,),
 
           NormalInputField(labelText: 'Email Address',),
           Padding(padding: EdgeInsets.all(10)),
