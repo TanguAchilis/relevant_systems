@@ -3,6 +3,7 @@ import 'package:relevant_systems/components/clippaths.dart';
 import 'package:relevant_systems/components/normalInputField.dart';
 import 'package:relevant_systems/components/passwordInputField.dart';
 import 'package:relevant_systems/screens/login/login_screen.dart';
+import 'package:relevant_systems/screens/signUp/signUp_screen.dart';
 
 void main() => runApp(MyApp());
 
@@ -36,7 +37,7 @@ class BaseScreen extends StatelessWidget {
           SemiTriangularPath(),
           TopThinTriangularPath(),
           BottomThinTriangularPath(),
-        LoginScreen()
+        SignUPScreen()
 
       ],
     ),

@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:relevant_systems/components/normalInputField.dart';
 import 'package:relevant_systems/components/passwordInputField.dart';
 
-class LoginScreen extends StatelessWidget {
-  static String id = 'LoginScreen';
+class SignUPScreen extends StatelessWidget {
+  static String id='SignUPScreen';
   @override
   Widget build(BuildContext context) {
     var screensize = MediaQuery.of(context).size;
     return Container(
       alignment: Alignment.bottomCenter,
-      margin: EdgeInsets.only(bottom: screensize.height / 10),
+      //margin: EdgeInsets.only(bottom: screensize.height / 40),
 
       padding: EdgeInsets.symmetric(
 
@@ -28,27 +28,22 @@ class LoginScreen extends StatelessWidget {
           SizedBox(height: screensize.height / 30,),
 
           Text('Relevant Systems',  style: TextStyle(fontSize: 30, color: Colors.grey.shade800, fontFamily: 'Gotham-Medium', fontWeight: FontWeight.w900),),
-          SizedBox(height: screensize.height/14,),
+          SizedBox(height: screensize.height/20,),
+
+          NormalInputField(labelText: 'User Name',),
+          Padding(padding: EdgeInsets.all(10)),
 
           NormalInputField(labelText: 'Email Address',),
           Padding(padding: EdgeInsets.all(10)),
 
           PasswordInputField(labelText: 'Password',),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.end,
-            children: <Widget>[
-              FlatButton(
-                child: Text('Forgot password ?'),
-              )
-            ],
-          ),
 
-          SizedBox(height: screensize.height/30),
+          SizedBox(height: screensize.height/40),
 
           MaterialButton(
             minWidth: screensize.width / 1.13 - screensize.width / 15,
             padding: EdgeInsets.symmetric(vertical:screensize.width / 20 ),
-            child: Text('LOGIN', style: TextStyle(fontSize: 20,color: Theme.of(context).primaryColor, fontFamily: 'Gotham-Medium'),),
+            child: Text('SIGN UP', style: TextStyle(fontSize: 20,color: Theme.of(context).primaryColor, fontFamily: 'Gotham-Medium'),),
             color: Theme.of(context).primaryColorDark,
             onPressed: (){
 
@@ -60,10 +55,9 @@ class LoginScreen extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              Text('Don\'t have an account?', style:TextStyle(color: Colors.grey.shade400,fontSize: 16)),
+              Text('Already have an account?', style:TextStyle(color: Colors.grey.shade400,fontSize: 16)),
               FlatButton(
-                child: Text('Create', style: TextStyle(fontSize: 16, color: Theme.of(context).primaryColor,fontWeight: FontWeight.bold)),
-              
+                child: Text('Sign in', style: TextStyle(fontSize: 16, color: Theme.of(context).primaryColor,fontWeight: FontWeight.bold)),
               )
             ],
           ),
