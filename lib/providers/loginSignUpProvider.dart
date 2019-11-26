@@ -11,4 +11,13 @@ class LoginSignUpProvider with ChangeNotifier{
 
   get readSignUpOrLogin => _signUpOrLogin;
 
+  //variables for the signup screen
+  String signUpUserName;
+  String signUpEmail;
+  String signUpPassword;
+
+  //variables for the login screen
+  String loginEmail;
+  String loginPassword;
+
 }
