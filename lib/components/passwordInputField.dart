@@ -33,39 +33,41 @@ class _PasswordInputFieldState extends State<PasswordInputField> {
           border: Border(left: BorderSide(color: focus?Theme.of(context).primaryColorDark:Colors.transparent,width:10 ))
         ),
 
-        child: TextFormField(
-          onTap: (){
-            setState(() {
-              focus=true;
-              
+        child: Center(
+          child: TextFormField(
+            onTap: (){
+              setState(() {
+                focus=true;
+
+              });
+            },
+
+
+            validator: widget.validator,
+            onChanged: widget.onChanged,
+            onEditingComplete: (){
+              setState(() {
+              focus=false;
             });
-          },
-        
-          
-          validator: widget.validator,
-          onChanged: widget.onChanged,
-          onEditingComplete: (){
-            setState(() {
-            focus=false;
-          });
-          FocusScope.of(context).unfocus();} ,
-          obscureText: hidePassword,
-          decoration: InputDecoration(
-           
-            labelText: widget.labelText,
-             border: InputBorder.none,
-             suffixIcon: IconButton(
-               color:Theme.of(context).accentColor,
-               icon:  hidePassword ? Icon(Icons.visibility) : Icon(Icons.visibility_off),
-               onPressed: (){
-                 setState(() {
-                  
-                   hidePassword=!hidePassword;
-                 });
-               },
-             )
+            FocusScope.of(context).unfocus();} ,
+            obscureText: hidePassword,
+            decoration: InputDecoration(
+
+              labelText: widget.labelText,
+               border: InputBorder.none,
+               suffixIcon: IconButton(
+                 color:Theme.of(context).accentColor,
+                 icon:  hidePassword ? Icon(Icons.visibility) : Icon(Icons.visibility_off),
+                 onPressed: (){
+                   setState(() {
+
+                     hidePassword=!hidePassword;
+                   });
+                 },
+               )
+            ),
+
           ),
-        
         ),
       ),
     )
