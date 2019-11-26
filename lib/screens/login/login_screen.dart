@@ -13,7 +13,7 @@ class LoginScreen extends StatelessWidget {
     var provider = Provider.of<LoginSignUpProvider>(context);
     return Container(
       alignment: Alignment.bottomCenter,
-      margin: EdgeInsets.only(bottom: screensize.height / 10),
+      margin: EdgeInsets.only(bottom: screensize.height / 25),
 
       padding: EdgeInsets.symmetric(
 
