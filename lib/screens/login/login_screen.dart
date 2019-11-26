@@ -1,12 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:relevant_systems/components/normalInputField.dart';
 import 'package:relevant_systems/components/passwordInputField.dart';
+import 'package:relevant_systems/providers/loginSignUpProvider.dart';
+import 'package:relevant_systems/screens/signUp/signUp_screen.dart';
 
 class LoginScreen extends StatelessWidget {
   static String id = 'LoginScreen';
   @override
   Widget build(BuildContext context) {
     var screensize = MediaQuery.of(context).size;
+    var provider = Provider.of<LoginSignUpProvider>(context);
     return Container(
       alignment: Alignment.bottomCenter,
       margin: EdgeInsets.only(bottom: screensize.height / 10),
@@ -51,7 +55,7 @@ class LoginScreen extends StatelessWidget {
             child: Text('LOGIN', style: TextStyle(fontSize: 20,color: Theme.of(context).primaryColor, fontFamily: 'Gotham-Medium'),),
             color: Theme.of(context).primaryColorDark,
             onPressed: (){
-
+                
             },
           ),
 
@@ -63,7 +67,9 @@ class LoginScreen extends StatelessWidget {
               Text('Don\'t have an account?', style:TextStyle(color: Colors.grey.shade400,fontSize: 16)),
               FlatButton(
                 child: Text('Create', style: TextStyle(fontSize: 16, color: Theme.of(context).primaryColor,fontWeight: FontWeight.bold)),
-              
+                onPressed: (){
+                  provider.toggleLoginSignUP=SignUPScreen();
+                },
               )
             ],
           ),
