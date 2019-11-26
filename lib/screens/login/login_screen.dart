@@ -37,12 +37,10 @@ class _LoginScreenState extends State<LoginScreen> {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
             SizedBox(
-              height: screensize.height / 30,
+              height: screensize.height / 40,
             ),
             Image.asset('assets/images/rel_sys_logo.png',height: screensize.height/6,fit: BoxFit.cover,),
-            SizedBox(
-              height: screensize.height / 14,
-            ),
+           
             NormalInputField(
               labelText: 'Email Address',
               validator: (email)=>Validator.emailValidator(email),

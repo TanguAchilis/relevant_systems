@@ -39,12 +39,10 @@ class _SignUPScreenState extends State<SignUPScreen> {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
             SizedBox(
-              height: screensize.height / 30,
+              height: screensize.height / 40,
             ),
            Image.asset('assets/images/rel_sys_logo.png',height: screensize.height/6,fit: BoxFit.cover,),
-            SizedBox(
-              height: screensize.height / 20,
-            ),
+           
             NormalInputField(
               labelText: 'User Name',
               validator: (value)=>Validator.textValidator(value),
