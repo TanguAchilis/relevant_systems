@@ -30,17 +30,8 @@ class SignUPScreen extends StatelessWidget {
           SizedBox(
             height: screensize.height / 30,
           ),
-          Text(
-            'Relevant Systems',
-            style: TextStyle(
-                fontSize: 30,
-                color: Colors.grey.shade800,
-                fontFamily: 'Gotham-Medium',
-                fontWeight: FontWeight.w900),
-          ),
-          SizedBox(
-            height: screensize.height / 20,
-          ),
+          Image.asset('assets/images/rel_sys_logo.png',height: screensize.height/6,fit: BoxFit.cover,),
+          // SizedBox(height: screensize.height/18,),
           NormalInputField(
             labelText: 'User Name',
           ),

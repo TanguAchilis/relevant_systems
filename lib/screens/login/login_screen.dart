@@ -31,8 +31,8 @@ class LoginScreen extends StatelessWidget {
         children: <Widget>[
           SizedBox(height: screensize.height / 30,),
 
-          Text('Relevant Systems',  style: TextStyle(fontSize: 30, color: Colors.grey.shade800, fontFamily: 'Gotham-Medium', fontWeight: FontWeight.w900),),
-          SizedBox(height: screensize.height/18,),
+        Image.asset('assets/images/rel_sys_logo.png',height: screensize.height/6,fit: BoxFit.cover,),
+         // SizedBox(height: screensize.height/18,),
 
           NormalInputField(labelText: 'Email Address',),
           Padding(padding: EdgeInsets.all(10)),
@@ -66,7 +66,7 @@ class LoginScreen extends StatelessWidget {
             children: <Widget>[
               Text('Don\'t have an account?', style:TextStyle(color: Colors.grey.shade400,fontSize: 16)),
               FlatButton(
-                child: Text('Create', style: TextStyle(fontSize: 16, color: Theme.of(context).primaryColor,fontWeight: FontWeight.bold)),
+                child: Text('Register', style: TextStyle(fontSize: 16, color: Theme.of(context).primaryColor,fontWeight: FontWeight.bold)),
                 onPressed: (){
                   provider.toggleLoginSignUP=SignUPScreen();
                 },
