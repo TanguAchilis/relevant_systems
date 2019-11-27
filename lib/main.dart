@@ -4,6 +4,7 @@ import 'package:relevant_systems/components/clippaths.dart';
 import 'package:relevant_systems/components/normalInputField.dart';
 import 'package:relevant_systems/components/passwordInputField.dart';
 import 'package:relevant_systems/providers/loginSignUpProvider.dart';
+import 'package:relevant_systems/screens/HomeScreen/homeScreen.dart';
 import 'package:relevant_systems/screens/login/login_screen.dart';
 import 'package:relevant_systems/screens/signUp/signUp_screen.dart';
 
@@ -29,7 +30,7 @@ class MyApp extends StatelessWidget {
           primaryColor: Color(0xFF51fa8f),
           accentColor: Color(0xFF51fa8f),
         ),
-        home: BaseScreen(),
+        home: HomeScreen(),
       ),
     );
   }
