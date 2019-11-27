@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "476896784546",
+    "firebase_url": "https://relevant-systems.firebaseio.com",
+    "project_id": "relevant-systems",
+    "storage_bucket": "relevant-systems.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:476896784546:android:7f7d8bd6dda601e471e7fb",
+        "android_client_info": {
+          "package_name": "com.relevantSystems.relevant_systems"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "476896784546-oi9eqjgtdtqd0h39upc9l3q8n9gkii1l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIUnTTx5kFcK3B69kD8-355w_NlyyM_J0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "476896784546-oi9eqjgtdtqd0h39upc9l3q8n9gkii1l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
